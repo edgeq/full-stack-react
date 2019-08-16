@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://edge_admin:edge_admin@devconnector-1vnat.mongodb.net/test?retryWrites=true&w=majority"
+}
