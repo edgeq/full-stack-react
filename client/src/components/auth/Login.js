@@ -12,6 +12,7 @@ const Login = () => {
   const { email, password } = formData;
 
   const onChange = e =>
+    // same as calling this.setState({...formData, e.target.name :e.target.value})
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const onSubmit = async e => {
@@ -30,8 +31,11 @@ const Login = () => {
           <input
             type="email"
             placeholder="Email Address"
+            // name is [e.target.name]
             name="email"
+            // value comes from useState({}) and is e.target.value
             value={email}
+            // onChange calls setFormData from useState
             onChange={e => onChange(e)}
             required
           />
